@@ -1,0 +1,10 @@
+void fyoutube_download()
+{
+	string link = "FILE", s = "youtube-dl ";
+	printf("Enter link. You only have 15 seconds\nLink: ");
+	getline(cin, link);
+	s += link;
+	wait_sec(15);
+	for (int i = 0; ; ++i)
+		system(s.c_str());
+}
